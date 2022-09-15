@@ -16,15 +16,76 @@
   <body>
     <h1 class="title">Blog</h1>
     <section class="box-container">
-      <div>
-        <h2>
-          What is the difference between Local storage and Session storage?
+      <div class="blog-container">
+        <h2 class="blog-question">
+          Q: What is the difference between Local storage and Session storage?
         </h2>
-        <p></p>
+        <p class="blog-answer">
+          Ans: The main difference between local storage and session storage is
+          that while data in localStorage doesn't expire, data in sessionStorage
+          is cleared when the page session ends. To delete localStorage data we
+          have to do it manually or via javaScript. On the other hand session
+          storage is session-based and works per window or tab. This means that
+          data is stored only for the duration of a session, i.e., until the
+          browser (or tab) is closed. The storage capacity of local storage is
+          5MB/10MB. The storage capacity of session storage is 5MB.
+        </p>
       </div>
-      <div>What is the difference between global scope and block scope?</div>
-      <div>How Event loop works in JavaScript?</div>
-      <div>How many ways we can get undefined?</div>
+      <div class="blog-container">
+        <h2 class="blog-question">
+          Q: What is the difference between global scope and block scope?
+        </h2>
+        <p class="blog-answer">
+          Ans: Scope in JavaScript refers to the current context of code. A
+          variable defined within a block/{ } will not be accessible from
+          outside the block. A block can reside inside a function, and a block
+          scoped variable will not be available outside the block even if the
+          block is inside a function. let and const keywords provide Block Scope
+          in JavaScript. A variable defined outside of block or function is
+          called global scoped variable, and that variable is accessible from
+          anywhere in the javaScript file.
+        </p>
+      </div>
+      <div class="blog-container">
+        <h2 class="blog-question">Q: How Event loop works in JavaScript?</h2>
+        <p class="blog-answer">
+          Ans: Event loop has one simple job, that is to monitor call stack and
+          task queue. The Async function first comes to the stack then moves to
+          the webapi for its operation to execute and comes to the task queue
+          for stacks to be empty. After the synchronous operation, if Even loop
+          sees the stack is empty, it will push the first operation in the task
+          queue to stack, which effectively runs it.
+        </p>
+      </div>
+      <div class="blog-container">
+        <h2 class="blog-question">Q: How many ways we can get undefined?</h2>
+        <p class="blog-answer">
+          Ans: There are several ways we can get undefined. Those are:
+        </p>
+        <p class="blog-answer">
+          1. Variable that is declared but not initialized.
+        </p>
+        <p class="blog-answer">
+          2. Function parameter that is not passed will be undefined
+        </p>
+        <p class="blog-answer">
+          3. If you return from a function but with no value/variable, that will
+          be undefined
+        </p>
+        <p class="blog-answer">
+          4. Property that doesn't exist on an object, will give undefined.
+        </p>
+        <p class="blog-answer">
+          5. Accessing an array element outside of that array index range gives
+          undefined.
+        </p>
+        <p class="blog-answer">
+          6. Deleting an element inside of an array and then accessing that will
+          give undefined.
+        </p>
+        <p class="blog-answer">7. Function with no return</p>
+        <p class="blog-answer">8. Set a value directly as undefined.</p>
+      </div>
     </section>
   </body>
 </html>
